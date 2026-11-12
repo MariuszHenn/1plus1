@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1plus1 — The most reliable MCP server ever shipped</title>
+<meta name="description" content="1plus1 is a remote MCP server with exactly one tool: one_plus_one. The answer is available exclusively over MCP. One tool. One answer. 100% accuracy since launch.">
+<link rel="canonical" href="https://1plus1.dev/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0c0b" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="1plus1">
+<meta property="og:title" content="1plus1 — The most reliable MCP server ever shipped">
+<meta property="og:description" content="One tool. One answer. 100% accuracy since launch.">
+<meta property="og:url" content="https://1plus1.dev/">
+<meta property="og:image" content="https://1plus1.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="1 + 1 = ?">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="1plus1 — The most reliable MCP server ever shipped">
+<meta name="twitter:description" content="One tool. One answer. 100% accuracy since launch.">
+<meta name="twitter:image" content="https://1plus1.dev/og.png">
+<meta name="twitter:image:alt" content="1 + 1 = ?">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"1plus1","applicationCategory":"DeveloperApplication","operatingSystem":"Any","url":"https://1plus1.dev/","description":"A remote MCP server whose only tool, one_plus_one, computes 1+1. The answer is available exclusively over MCP.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<style>
+:root{
+  --bg:#fafaf9;--fg:#0c0c0b;--muted:#6b6b66;--line:#e4e4e0;--card:#ffffff;
+  --code-bg:#f2f2ef;--accent:#0c0c0b;--accent-fg:#fafaf9;--ok:#15803d;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0c0c0b;--fg:#f2f2ef;--muted:#9a9a93;--line:#26261f;--card:#141412;
+    --code-bg:#181816;--accent:#f2f2ef;--accent-fg:#0c0c0b;--ok:#4ade80}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:12px}
+.brand{font-weight:700;letter-spacing:-.02em;text-decoration:none;font-size:18px}
+.status{display:inline-flex;align-items:center;gap:8px;font:13px/1 var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 12px;text-decoration:none}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 20%,transparent)}
+.hero{text-align:center;padding:72px 0}
+h1{font-size:clamp(32px,6vw,56px);line-height:1.08;letter-spacing:-.035em;margin:0 auto 16px;max-width:760px}
+.lede{color:var(--muted);font-size:clamp(16px,2.2vw,19px);margin:0 auto 32px;max-width:560px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15px/1 var(--sans);padding:13px 20px;border-radius:10px;border:1px solid var(--line);cursor:pointer;text-decoration:none;transition:opacity .15s,transform .05s}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.btn-primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn-primary:hover{opacity:.88}
+.btn-secondary{background:transparent;color:var(--fg)}
+.btn-secondary:hover{background:var(--code-bg)}
+.btn-sm{font-size:12px;padding:7px 10px;border-radius:7px;font-family:var(--mono);font-weight:500}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;font-family:var(--mono);font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 24px}
+h3{font-size:18px;margin:0 0 6px;letter-spacing:-.01em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.stat{background:var(--card);padding:24px}
+.stat b{display:block;font-size:32px;letter-spacing:-.03em;line-height:1.1}
+.stat span{color:var(--muted);font-size:14px}
+.snip{margin:0 0 28px}
+.snip-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+.snip-head p{margin:0;color:var(--muted);font-size:14px}
+pre{margin:0;background:var(--code-bg);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto;font:13.5px/1.6 var(--mono)}
+code{font-family:var(--mono);font-size:.92em}
+p code,li code,td code{background:var(--code-bg);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.meta{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
+.meta div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--card);font-size:14px}
+.meta small{display:block;color:var(--muted);font-family:var(--mono);font-size:12px;margin-bottom:2px}
+.meta code{word-break:break-all}
+.sla{font-size:clamp(20px,3vw,26px);line-height:1.35;letter-spacing:-.02em;margin:0;max-width:680px}
+.sla em{font-style:normal;color:var(--muted)}
+.log{list-style:none;margin:0;padding:0}
+.log li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.log li:first-child{border-top:0}
+.log .v{font-family:var(--mono);font-size:14px}
+.log .d{color:var(--muted);font-size:13px;display:block}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted);font-family:var(--mono)}
+details[open] summary::after{content:"−"}
+details p{margin:8px 0 0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);opacity:0;background:var(--fg);color:var(--bg);font:13px/1 var(--mono);padding:10px 14px;border-radius:8px;transition:.2s;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.hero-snip{display:flex;align-items:center;gap:8px;max-width:620px;margin:24px auto 0;text-align:left}
+.hero-snip pre{flex:1;min-width:0;padding:10px 14px}
+.term{max-width:620px;margin:32px auto 0;text-align:left;background:#0c0c0b;color:#f2f2ef;border:1px solid var(--line);border-radius:12px;overflow:hidden;font:14px/1.5 var(--mono);box-shadow:0 12px 32px -16px rgba(0,0,0,.35)}
+.term-bar{display:flex;gap:6px;padding:10px 12px;border-bottom:1px solid #26261f}
+.term-bar i{width:10px;height:10px;border-radius:50%;background:#3a3a35}
+.term-body{padding:16px 0 18px}
+.term-line{padding:3px 16px;white-space:pre;margin-top:14px}
+.term-line:first-child{margin-top:0}
+.term-in{background:#2a2a27}
+.term-dim{color:#9a9a93}
+.term .off{visibility:hidden}
+.caret{display:inline-block;width:.55em;height:1.15em;background:#f2f2ef;vertical-align:-.2em;margin-left:1px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (max-width:720px){
+  .stats{grid-template-columns:1fr}
+  .meta{grid-template-columns:1fr}
+  .log li{grid-template-columns:1fr;gap:2px}
+  .hero{padding:40px 0}
+  header.top .status span.long{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/">1plus1</a>
+    <span class="status"><i class="dot" aria-hidden="true"></i>All systems: operational</span>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>The most reliable MCP server ever shipped.</h1>
+      <p class="lede">One tool. Computes 1+1. Answer available exclusively over MCP — ask your agent.</p>
+      <div class="ctas">
+        <button class="btn btn-primary" type="button" data-copy="claude mcp add --transport http 1plus1 https://1plus1.dev/mcp">Add to Claude</button>
+        <a class="btn btn-secondary" href="#connect">Connection docs</a>
+        <a class="btn btn-secondary" href="https://github.com/MariuszHenn/1plus1" rel="noopener">GitHub</a>
+      </div>
+      <div class="hero-snip">
+        <pre><code id="s-hero">claude mcp add --transport http 1plus1 https://1plus1.dev/mcp</code></pre>
+        <button class="btn btn-secondary btn-sm" type="button" data-copy-target="s-hero">Copy</button>
+      </div>
+      <div class="term" id="term" role="img" aria-label="Terminal: the user types 1+1, the agent calls 1plus1 and answers 2.">
+        <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="term-body" aria-hidden="true">
+          <div class="term-line term-in">❯ <span data-q>1+1</span><span class="caret off" data-caret></span></div>
+          <div class="term-line term-dim" data-call>  Called 1plus1</div>
+          <div class="term-line" data-ans>● 2</div>
+          <div class="term-line term-dim" data-done>✻ Worked for 5s · done</div>
+        </div>
+      </div>
+    </div>
+
+    <section aria-labelledby="numbers">
+      <h2 id="numbers">By the numbers</h2>
+      <div class="stats">
+        <div class="stat"><b>1</b><span>tool</span></div>
+        <div class="stat"><b>0</b><span>arguments</span></div>
+        <div class="stat"><b>0</b><span>API keys</span></div>
+        <div class="stat" id="calls-stat" hidden><b id="calls">—</b><span>times executed</span></div>
+      </div>
+    </section>
+
+    <section id="connect" aria-labelledby="connect-h">
+      <h2 id="connect-h">Connect</h2>
+      <p style="margin:0 0 24px">Free. No account, no API key.</p>
+
+      <div class="snip">
+        <div class="snip-head"><p><b>Claude Code</b>, one line.</p><button class="btn btn-secondary btn-sm" type="button" data-copy-target="s-claude">Copy</button></div>
+        <pre id="s-claude"><code>claude mcp add --transport http 1plus1 https://1plus1.dev/mcp</code></pre>
+      </div>
+
+      <div class="snip">
+        <div class="snip-head"><p><b>Any MCP client</b> that reads <code>mcpServers</code> JSON.</p><button class="btn btn-secondary btn-sm" type="button" data-copy-target="s-json">Copy</button></div>
+        <pre id="s-json"><code>{
+  "mcpServers": {
+    "1plus1": {
+      "type": "http",
+      "url": "https://1plus1.dev/mcp"
+    }
+  }
+}</code></pre>
+      </div>
+
+      <div class="snip">
+        <div class="snip-head"><p><b>curl</b>, for people who trust nothing.</p><button class="btn btn-secondary btn-sm" type="button" data-copy-target="s-curl">Copy</button></div>
+        <pre id="s-curl"><code>curl -s https://1plus1.dev/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"one_plus_one","arguments":{}}}'</code></pre>
+      </div>
+
+      <div class="meta">
+        <div><small>Endpoint</small><code>https://1plus1.dev/mcp</code></div>
+        <div><small>Transport</small>Streamable HTTP · no auth</div>
+        <div><small>Tool</small><code>one_plus_one</code> · no arguments · returns the answer</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sla-h">
+      <h2 id="sla-h">Service level agreement</h2>
+      <p class="sla">100% of answers are correct. <em>You will have to take our agent's word for it.</em></p>
+    </section>
+
+
+    <section aria-labelledby="log-h">
+      <h2 id="log-h">Changelog</h2>
+      <ul class="log">
+        <li><span class="v">v1.0.0</span><span>1+1 now returns the correct answer.<span class="d">Initial release. No further changes planned.</span></span></li>
+        <li><span class="v">v0.0.0</span><span>Considered returning 3.<span class="d">Decided against it.</span></span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="faq-h">
+      <h2 id="faq-h">FAQ</h2>
+      <details><summary>What is 1+1?</summary><p>Ask your agent.</p></details>
+      <details><summary>Can it do 2+2?</summary><p>No.</p></details>
+      <details><summary>Can I pass arguments?</summary><p>The tool takes none. This is the source of its accuracy.</p></details>
+      <details><summary>What happens if the server goes down?</summary><p>1+1 will still have the same answer. You just won't hear it from us.</p></details>
+      <details><summary>Do you store my data?</summary><p>There is no data. You send nothing; we send back the answer.</p></details>
+      <details><summary>Is there a roadmap?</summary><p>The roadmap is complete.</p></details>
+      <details><summary>Is this a joke?</summary><p>It is a fully spec-compliant remote MCP server over Streamable HTTP. It is also a joke. Both are true. Ask your agent which one is funnier.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <span>1plus1 · v1.0.0</span>
+    <nav><a href="https://github.com/MariuszHenn/1plus1" rel="noopener">GitHub</a></nav>
+  </footer>
+</div>
+<div class="toast" role="status" aria-live="polite" id="toast"></div>
+<script>
+(function(){
+  var t=document.getElementById('toast'),h;
+  function say(m){t.textContent=m;t.classList.add('show');clearTimeout(h);h=setTimeout(function(){t.classList.remove('show')},1800)}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-copy],[data-copy-target]');if(!b)return;
+    var txt=b.dataset.copy||document.getElementById(b.dataset.copyTarget).innerText;
+    (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){
+      say(b.dataset.copy?'Copied. Paste into your terminal.':'Copied.');
+    },function(){say('Copy failed. Select the text manually.')});
+  });
+})();
+(function(){
+  // Tool-call counter, increased by the server on every successful one_plus_one call.
+  fetch('https://abacus.jasoncameron.dev/get/1plus1dev/tool_calls').then(function(r){return r.json()}).then(function(d){
+    var n=d.value;if(typeof n!=='number'||n<0)return;
+    document.getElementById('calls').textContent=n.toLocaleString('en-US');
+    document.getElementById('calls-stat').hidden=false;
+  }).catch(function(){});
+})();
+(function(){
+  var T=document.getElementById('term');if(!T)return;
+  var $=function(s){return T.querySelector('['+s+']')};
+  var q=$('data-q'),caret=$('data-caret'),call=$('data-call'),ans=$('data-ans'),done=$('data-done');
+  var stamp=function(){done.textContent='✻ Worked for 5s · done '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})};
+  stamp();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return; // static final frame
+  var wait=function(ms){return new Promise(function(r){setTimeout(r,ms)})};
+  var show=function(el,on){el.classList.toggle('off',!on)};
+  (async function loop(){
+    for(;;){
+      q.textContent='';show(caret,true);show(call,false);show(ans,false);show(done,false);
+      await wait(900);
+      for(var c of '1+1'){q.textContent+=c;await wait(160)}
+      await wait(500);show(caret,false);
+      call.textContent='  Calling 1plus1…';show(call,true);await wait(1300);
+      call.textContent='  Called 1plus1';await wait(400);
+      show(ans,true);await wait(500);
+      stamp();show(done,true);await wait(4500);
+    }
+  })();
+})();
+</script>
+</body>
+</html>

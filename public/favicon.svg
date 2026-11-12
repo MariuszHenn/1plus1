@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>rect{fill:#0c0c0b}text{fill:#fafaf9}@media (prefers-color-scheme:dark){rect{fill:#fafaf9}text{fill:#0c0c0b}}</style>
+  <rect width="64" height="64" rx="14"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-1">1+1</text>
+</svg>
